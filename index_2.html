@@ -18,6 +18,10 @@
     <link rel="icon" type="image/png" sizes="32x32" href="https://images.squarespace-cdn.com/content/v1/57ffdcd02994cab930193f15/1496373203378-QJ2EKB7H2EH5S9CI7VCK/favicon.ico?format=100w">
     <!-- - - - -->
     <!-- CSS Plugins -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/jquery.animatedheadline.css">
@@ -137,18 +141,26 @@
                     </li>
                 </ul> -->
                 <div class="home-social d-flex justify-content-center justify-content-md-start mt-3">
-                    <a href="https://web.skype.com/" aria-label="Skype" target="_blank"><svg class="social-icon fab">
+                    <a href="https://web.skype.com/" aria-label="Skype" target="_blank">
+                        <svg class="social-icon fab">
                         <use href="./images/icons-cv.svg#icon-skype"></use>
-                    </svg></a>
-                    <a href="https://github.com/karimorozova" aria-label="Github" target="_blank"><svg class="social-icon fab">
+                    </svg>
+                </a>
+                    <a href="https://github.com/karimorozova" aria-label="Github" target="_blank">
+                        <svg class="social-icon fab">
                         <use href="./images/icons-cv.svg#icon-github"></use>
-                    </svg></a>
-                    <a href="https://www.facebook.com/karinka.ziebielian" aria-label="Facebook" target="_blank"><svg class="social-icon fab">
+                    </svg>
+                </a>
+                    <a href="https://www.facebook.com/karinka.ziebielian" aria-label="Facebook" target="_blank">
+                        <svg class="social-icon fab">
                         <use href="./images/icons-cv.svg#icon-facebook"></use>
-                    </svg></a>
-                    <a href="https://www.linkedin.com/" aria-label="linkedin" target="_blank"><svg class="social-icon fab">
+                    </svg>
+                </a>
+                    <a href="https://www.linkedin.com/" aria-label="linkedin" target="_blank">
+                        <svg class="social-icon fab">
                         <use href="./images/icons-cv.svg#icon-linkedin"></use>
-                    </svg></a>
+                    </svg>
+                </a>
                 </div>
 
             </div>
@@ -392,28 +404,30 @@
     <section class="portfolio section-padding" id="portfolio">
         <div class="container">
             <div class="main-heading mx-auto">
-                <h2 class="main-head-animation">Porfolio</h2>
+                <h2 class="main-head-animation">Portfolio</h2>
                 <span>MY Projects</span>
             </div>
 
-            <!-- <span class="ah-words-wrapper">
-                <!-- <b class="is-visible">Web Designer</b> -->
-                <b class="is-visible my-projects">Comming soon</b>
-                <!-- <b>Mobile Developer</b> -->
-            </span> -->
-            <div class="prog-filter wow fadeIn">
+           <p class="my-projects">Coming coon...</p>
+            <!-- <div class="prog-filter wow fadeIn">
                 <ul class="ps-0">
                     <li class="cursor-pointer-hover active" data-filter="all">All</li>
                     <li class="cursor-pointer-hover" data-filter=".design">Design</li>
                     <li class="cursor-pointer-hover" data-filter=".development">Development</li>
                     <li class="cursor-pointer-hover" data-filter=".marketing">Marketing</li>
                 </ul>
-            </div>
+            </div> -->
             <div class="port-field row" id="portfolio-shuffle">
-                <div class="mix design prog-box col-12 col-md-6 col-lg-4 mb-4" data-order="1">
-                    <a data-fancybox="gallery" class="d-block position-relative" href="images/portfolio/portfolio1.jpg">
+                <div dataorder="1"></div>
+                <div dataorder="2"></div>
+                <div dataorder="3"></div>
+                <div dataorder="4"></div>
+                <div dataorder="5"></div>
+                <div dataorder="6"></div>
+                <!-- <div class="mix design prog-box col-12 col-md-6 col-lg-4 mb-4" data-order="1">
+                     <a data-fancybox="gallery" class="d-block position-relative" href="images/portfolio/portfolio1.jpg">
                         <img class="img-fluid w-100 d-block" src="images/portfolio/portfolio1.jpg" alt="portfolio">
-                        <div class="port-disc">
+                         <div class="port-disc">
                             <span></span>
                             <span></span>
                             <span></span>
@@ -421,11 +435,11 @@
                             <i class="fas fa-search-plus"></i>
                             <h4>Project Title</h4>
                             <p class="type mb-0">Design</p>
-                        </div>
+                        </div> 
                     </a>
                 </div>
                 <div class="mix development prog-box col-12 col-md-6 col-lg-4 mb-4" data-order="2">
-                    <a data-fancybox="gallery" class="d-block position-relative" href="images/portfolio/portfolio2.jpg">
+                     <a data-fancybox="gallery" class="d-block position-relative" href="images/portfolio/portfolio2.jpg">
                         <img class="img-fluid w-100 d-block" src="images/portfolio/portfolio2.jpg" alt="portfolio">
                         <div class="port-disc">
                             <span></span>
@@ -436,7 +450,7 @@
                             <h4>Project Title</h4>
                             <p class="type mb-0">Development</p>
                         </div>
-                    </a>
+                    </a> 
                 </div>
                 <div class="mix design prog-box col-12 col-md-6 col-lg-4 mb-4" data-order="3">
                     <a data-fancybox="gallery" class="d-block position-relative" href="images/portfolio/portfolio3.jpg">
@@ -494,16 +508,19 @@
                         </div>
                     </a>
                 </div>
-            </div>
+            </div> -->
             <div class="more-projects text-center mt-4 pt-2">
-                <a href="#" class="main-btn">More Projects</a>
+                <a class="main-btn" href="#">
+                    <i class="fas fa-inbox"></i>
+                    Download CV
+                </a>
             </div>
         </div>
        
     </section>
     <!-- End Projects -->
     <!-- Start Counter -->
-    <section class="counter pt-5 pb-5" id="counter">
+    <!-- <section class="counter pt-5 pb-5" id="counter">
         <div class="container">
             <div class="row counter-area">
                 <div class="wow fadeInLeft col-12 col-lg-3 col-md-6 text-center">
@@ -528,10 +545,10 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- End Counter -->
     <!-- Start Reviews -->
-    <section class="reviews section-padding" id="reviews">
+    <!-- <section class="reviews section-padding" id="reviews">
         <div class="container">
             <div class="main-heading mx-auto">
                 <h2 class="main-head-animation">Reviews</h2>
@@ -636,10 +653,10 @@
             </div>
 
         </div>
-    </section>
+    </section> -->
     <!-- End Reviews -->
     <!-- Start Blog -->
-    <section class="blog section-padding" id="blog">
+    <!-- <section class="blog section-padding" id="blog">
         <div class="container">
             <div class="main-heading mx-auto">
                 <h2 class="main-head-animation">Blog</h2>
@@ -711,7 +728,7 @@
                 <a href="#" class="main-btn">More Blogs</a>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- End Blog -->
     <!-- Start Contact -->
     <section class="contact section-padding" id="contact">
@@ -725,26 +742,46 @@
                     <div class="location">
                         <i class="fas fa-street-view"></i>
                         <h5>Location</h5>
-                        <address class="mb-0">205 Fairview St. Rochester, NY 14606</address>
+                        <address class="mb-0">Athinon, 82, B2, Limassol, 3040, Cyprus</address>
                     </div>
                     <div class="email">
                         <i class="far fa-envelope"></i>
                         <h5>Email</h5>
-                        <a href="mailto:tomas@example.com">tomas@example.com</a>
+                        <a href="karimorozova13@gmail.com">karimorozova13@gmail.com</a>
                     </div>
                     <div class="phone">
                         <i class="fas fa-phone-alt"></i>
                         <h5>Phone</h5>
-                        <a href="tel:#">+2 651 976 468</a>
+                        <a href="tel:35799797975">+357 99797975</a>
                     </div>
                     <div class="social">
                         <i class="fas fa-share-alt"></i>
                         <h5>Social Links</h5>
                         <div class="social-links pt-2 d-flex align-items-center justify-content-center">
-                            <a class="mx-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="mx-2" href="https://web.skype.com/" aria-label="Skype" target="_blank">
+                                <svg class="contact-icon fab">
+                                <use href="./images/icons-cv.svg#icon-skype"></use>
+                            </svg>
+                        </a>
+                            <a class="mx-2" href="https://github.com/karimorozova" aria-label="Github" target="_blank">
+                                <svg class="contact-icon fab">
+                                <use href="./images/icons-cv.svg#icon-github"></use>
+                            </svg>
+                        </a>
+                            <a class="mx-2" href="https://www.facebook.com/karinka.ziebielian" aria-label="Facebook" target="_blank">
+                                <svg class="contact-icon fab">
+                                <use href="./images/icons-cv.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                            <a class="mx-2" href="https://www.linkedin.com/" aria-label="linkedin" target="_blank">
+                                <svg class="contact-icon fab">
+                                <use href="./images/icons-cv.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                            <!-- <a class="mx-2" href="#"><i class="fab fa-facebook-f"></i></a>
                             <a class="mx-2" href="#"><i class="fab fa-twitter"></i></a>
                             <a class="mx-2" href="#"><i class="fab fa-instagram"></i></a>
-                            <a class="mx-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="mx-2" href="#"><i class="fab fa-linkedin-in"></i></a> -->
                         </div>
                     </div>
                 </div>
@@ -757,7 +794,7 @@
                             <input class="w-100 p-2" type="email" name="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" required placeholder="Email">
                         </div>
                         <div class="message mb-3">
-                            <textarea class="w-100 p-2" name="message" required placeholder="Message"></textarea>
+                            <textarea class="w-100 p-2 textarea" name="message" required placeholder="Message"></textarea>
                         </div>
                         <button type="submit">Send Message</button>
                         <p class="mt-3 contact-message"></p>
@@ -770,12 +807,12 @@
     <!-- Start Footer -->
     <footer>
         <div class="container position-relative d-flex flex-column flex-md-row align-items-center justify-content-between">
-            <p class="copy mb-2 mb-md-0">&copy; 2021 Tomas , All Right Reserved</p>
-            <div class="addition-links">
+            <p class="copy mb-2 mb-md-0">&copy; 2021. Created by Karine Morozova.</p>
+            <!-- <div class="addition-links">
                 <a href="#">Privacy Policy</a>
                 <span></span>
                 <a href="#">Terms &amp; Conditions</a>
-            </div>
+            </div> -->
             <a class="scroll-top" href="#">
                 <i class="fas fa-angle-up"></i>
             </a>
