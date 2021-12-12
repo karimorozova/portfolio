@@ -417,7 +417,7 @@ header nav ul li a.nav-link.active::before {
     display: flex;
     color: #eee;
     padding: 10px 0;
-    font-size: 18px;
+    font-size: 14px;
 }
 .about .about-content .about-info ul li span {
     display: block;
