@@ -321,6 +321,8 @@ header nav ul li a.nav-link.active::before {
     transition: 0.2s ease-in;
     z-index: 10;
 }
+
+
 .home .home-text .home-social a:hover {
     background-color: var(--main-color);
     color: #fff;
@@ -407,9 +409,9 @@ header nav ul li a.nav-link.active::before {
 }
 .about .about-content .about-info ul {
     padding-left: 0;
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-between; */
     margin-bottom: 30px;
 }
 .about .about-content .about-info ul li {
@@ -417,11 +419,13 @@ header nav ul li a.nav-link.active::before {
     display: flex;
     color: #eee;
     padding: 10px 0;
-    font-size: 14px;
+    font-size: 16px;
 }
+
 .about .about-content .about-info ul li span {
     display: block;
-    min-width: 70px;
+    margin-right: 8px;
+    min-width: 60px;
     color: var(--main-color);
 }
 /* End About */
@@ -642,10 +646,14 @@ header nav ul li a.nav-link.active::before {
     background-color: var(--main-color);
     color: #fff;
 }
-.portfolio .port-field a {
+/* .portfolio .port-field a {
     border-radius: 10px;
     overflow: hidden;
-}
+} */
+/* .main-btn:hover {
+    color: rgb(255, 255, 255);
+    background-color: var(--main-color);
+} */
 .portfolio .port-field a::before {
     content: '';
     position: absolute;
@@ -757,6 +765,7 @@ header nav ul li a.nav-link.active::before {
     animation: fadeInLeftBig; 
   animation-duration: 3000ms;
   animation-iteration-count:infinite;
+  
 }
 /* End Portfolio */
 
@@ -1082,7 +1091,7 @@ header nav ul li a.nav-link.active::before {
     border: 2px solid var(--sec-color);
     color: var(--sec-color);
     border-radius: 10px;
-    /* transform: rotate(45deg); */
+    transform: rotate(45deg);
     transition: 0.4s ease;
 }
 .contact .contact-field .contact-info-field > div.social .social-links a:hover {
@@ -1093,6 +1102,7 @@ header nav ul li a.nav-link.active::before {
     width: 20px;
     height: 20px; 
     transition: 0.2s ease-in;
+    transform: rotate(-45deg);
     fill: var(--sec-color);
 }
 div.social .social-links a:hover .contact-icon {

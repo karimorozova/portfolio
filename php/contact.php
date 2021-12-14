@@ -8,9 +8,9 @@
         $message = trim($_POST["message"]);
         
         $mail->setFrom($email , $name);
-        $mail->addAddress('demo@example.com');  //Your Email Address
+        $mail->addAddress('karimorozova13@gmail.com');  //Your Email Address
 
-        $mail->Subject = 'Contact Us Message';  //Header of the message
+        $mail->Subject = 'Contact Me Message';  //Header of the message
         $mail->Body    = 
         '
         <center>

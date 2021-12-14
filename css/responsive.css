@@ -17,7 +17,7 @@
         font-size: 30px;
     }
     .home .home-text h1 {
-        font-size: 35px !important;
+        font-size: 28px !important;
     }
     .resume .resume-field .resume-content {
         padding-left: 0;
@@ -32,6 +32,9 @@
     }
     .reviews .review-field .review-swiper-text .swiper-pagination {
         width: 100%;
+    }
+    .my-projects {
+        font-size: 30px;
     }
 }
 @media (max-width: 767px) {
@@ -74,7 +77,9 @@
     }
     .about .about-content .about-info ul li {
         flex-basis: 100%;
+       
     }
+   
     .reviews .review-field .review-swiper-image {
         display: none;
     }
@@ -85,5 +90,12 @@
 }
 /* Large */
 @media (min-width: 1200px) {
-
+    .about .about-content .about-info ul li {
+        font-size: 16px;
+       
+    }
+    .about .about-content .about-info ul li span {
+       
+        min-width: 70px;
+    }
 }
