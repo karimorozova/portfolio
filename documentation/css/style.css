@@ -1,0 +1,280 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.section-padding {
+    padding-top: 30px;
+    padding-bottom: 80px;
+}
+.image {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+body {
+    display: flex;
+    overflow: hidden;
+    background-color: #eee;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body .nav-area {
+    position: relative;
+    background-color: #0097e6;
+    height: 100vh;
+    overflow: auto;
+}
+h3 {
+    font-size: 22px;
+    font-weight: 400;
+    color: #333;
+}
+body .nav-area > i {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+body .nav-area > i.rotating {
+    transform: rotate(180deg);
+}
+body .content-area {
+    flex: 1;
+}
+.nav-area nav {
+    padding-top: 70px;
+    padding-left: 20px;
+}
+.nav-area ul {
+    list-style: none;
+}
+.nav-area ul li a {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    font-size: 18px;
+    width: 100%;
+    height: 50px;
+    width: 300px;
+    transition: width 0.5s ease;
+    overflow-x:initial;
+    color: #fff;
+}
+.nav-area ul li a span.upper-curve {
+    position: absolute;
+    top: -15px;
+    right: 0;
+    width: 15px;
+    height: 15px;
+    background-color: #eee;
+}
+.nav-area ul li a span.upper-curve::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0097e6;
+    border-bottom-right-radius: 15px;
+}
+.nav-area ul li a span.lower-curve {
+    position: absolute;
+    bottom: -15px;
+    right: 0;
+    width: 15px;
+    height: 15px;
+    background-color: #eee;
+}
+.nav-area ul li a span.lower-curve::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0097e6;
+    border-top-right-radius: 15px;
+}
+.nav-area ul li a span {
+    display: none;
+}
+.nav-area ul li a.active span {
+    display: block;
+}
+.nav-area ul li a.active {
+    background-color: #eee;
+    color: #111;
+    border-radius: 10px 0 0 10px;
+}
+.nav-area ul li a.sliding {
+    width: 60px !important;
+}
+.nav-area ul li a.sliding p.text {
+    display: none;
+}
+.nav-area ul li a i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-area ul li a p.text {
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    transform: translateY(-50%);
+    padding-left: 20px;
+}
+.content-area {
+    padding: 15px 10px 10px 30px;
+    overflow: auto;
+    height: 100vh;
+}
+.content-area .head {
+    position: relative;
+}
+.content-area .head h1 {
+    font-size: 30px;
+}
+.content-area .head .info {
+    padding-top: 20px;
+    margin-bottom: 60px;
+}
+.content-area .head .info > div {
+    display: flex;
+    padding: 5px 0;
+}
+.content-area .head .info > div p.text {
+    width: 120px;
+}
+.content-area .head a.contact {
+    position: absolute;
+    top: 100px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #192a56;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+}
+.content-area section h2 {
+    padding-top: 20px;
+    padding-bottom: 3px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid gray;
+}
+.content-area section.folder p {
+    line-height: 1.8
+}
+.content-area section.folder ul {
+    padding-top: 20px;
+    padding-left: 30px;
+    list-style-type: decimal;
+}
+.content-area section.folder ul li {
+    padding: 10px;
+}
+.content-area section.html h3,
+.content-area section.css h3,
+.content-area section.js h3,
+.content-area section.php h3 {
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 700;
+}
+.content-area section.html ul,
+.content-area section.html ol,
+.content-area section.css ul,
+.content-area section.js ul,
+.content-area section.php ul {
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.content-area section.html ul li,
+.content-area section.html ol li,
+.content-area section.css ul li,
+.content-area section.js ul li,
+.content-area section.php ul li {
+    padding: 5px;
+}
+.content-area section.php pre {
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: #ddd;
+    border: 1px solid #bbb;
+    color: #222;
+    font-size: 14px;
+}
+.content-area section.php pre span.comment {
+    color: #808080;
+}
+.content-area section.php pre span.variable {
+    color: #ec611b;
+}
+.content-area section.php pre span.quote {
+    color:#72a50e;
+}
+.content-area section.info .text {
+    padding: 10px;
+}
+.content-area section.info .text p {
+    font-size: 18px;
+    padding: 10px 0;
+    line-height: 1.6
+}.content-area section a {
+    color: #0097e6;
+    text-decoration: none;
+}
+.content-area section a:hover {
+    text-decoration: underline;
+}
+.content-area section.cust > div {
+    padding: 15px 5px 30px 5px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #fff;
+}
+.content-area section.cust > div h3 {
+    padding: 10px 0px;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: #ddd;
+}
+.content-area section.cust > div p {
+    padding: 10px 0;
+}
+.content-area section.cust > div.image-cust ul {
+    padding-left: 30px;
+    list-style: square;
+}
+.content-area section.cust > div.image-cust ul li {
+    padding: 10px;
+}
+.content-area section.cust > div.image-cust ul li b {
+    padding-left: 30px;
+}
+.content-area section.upload h3 {
+    padding: 10px 0;
+}
+.content-area section.upload p {
+    line-height: 1.7;
+}
+.content-area section.source h3 {
+    padding: 15px 0;
+}
+.content-area section.source ul {
+    padding-left: 30px;
+    list-style-type: square;
+}
+.content-area section.source ul li {
+    padding: 5px;
+}
