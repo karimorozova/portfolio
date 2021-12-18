@@ -238,7 +238,7 @@ header nav ul li a.nav-link.active::before {
 /* Start Home */
 .home {
     position: relative;
-    background: url(../images/black-white.png);
+    background: url(../images/removebg.png);
     background-size: content;
     background-attachment: fixed;
     background-position: right center;
