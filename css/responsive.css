@@ -11,6 +11,7 @@
     .contact .contact-field .contact-info-field {
         border-right: 1px solid var(--main-color);
     }
+    .home .container .home-text .intro
 }
 @media (max-width: 576px) {
     .home .home-text p.name {
@@ -44,6 +45,9 @@
     }
     .home .home-text h1 {
         font-size: 45px;
+    }
+    .home .home-text p.intro {
+color: var(--main-color);
     }
     .about .container .image {
         margin-right: 0;

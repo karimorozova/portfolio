@@ -238,7 +238,7 @@ header nav ul li a.nav-link.active::before {
 /* Start Home */
 .home {
     position: relative;
-    background: url(../images/removebg.png);
+    background: url(../images/home.png);
     background-size: content;
     background-attachment: fixed;
     background-position: right center;
@@ -289,6 +289,7 @@ header nav ul li a.nav-link.active::before {
 .home .home-text p.name {
     font-size: 35px;
     margin-bottom: 0;
+    /* color: var(--sec-color); */
 }
 .home .home-text p.name span {
     color: var(--main-color);
