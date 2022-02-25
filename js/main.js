@@ -12,8 +12,8 @@ $(document).ready(function () {
     if ($(window).width() < 991) {
         $("body *").removeClass("wow");
     }
-    var wow = new WOW();
-    wow.init();
+    // var wow = new WOW();
+    // wow.init();
     // ---------------
 
     // Preloader
@@ -152,38 +152,38 @@ $(document).ready(function () {
     // ---------------
 
     // Contact Form Validation & Activation
-    $("form.contact-form").submit(function (e) { 
-        e.preventDefault(e);
-        $.ajax({
-        type: 'POST',
-        url: $(this).attr('action'),
-        data: $(this).serialize()
-        })
-        .done(function(response) {
-            // Make sure that the formMessages div has the 'success' class.
-            $('.contact-message').fadeIn();
-            $('.contact-message').text(response);
-            $("form").find("input:not(input[type='submit'])").val('');
-            $("form").find("textarea").val('');
-            $('.contact-message').delay(3000).fadeOut()
-        })
-        .fail(function(data) {
-            // Set the message text.
-            if (data.responseText !== '') {
-                $('.contact-message').fadeIn();
-                $('.contact-message').text(data.responseText);
-                $("form").find("input:not(input[type='submit'])").val('');
-                $("form").find("textarea").val('');
-                $('.contact-message').delay(3000).fadeOut()
-            } else {
-                $('.contact-message').fadeIn();
-                $('.contact-message').text('Oops! An error occured and your message could not be sent.');
-                $("form").find("input:not(input[type='submit'])").val('');
-                $("form").find("textarea").val('');
-                $('.contact-message').delay(3000).fadeOut()
-            }
-        });
-    });
+    // $("form.contact-form").submit(function (e) { 
+    //     e.preventDefault(e);
+    //     $.ajax({
+    //     type: 'POST',
+    //     url: $(this).attr('action'),
+    //     data: $(this).serialize()
+    //     })
+    //     .done(function(response) {
+    //         // Make sure that the formMessages div has the 'success' class.
+    //         $('.contact-message').fadeIn();
+    //         $('.contact-message').text(response);
+    //         $("form").find("input:not(input[type='submit'])").val('');
+    //         $("form").find("textarea").val('');
+    //         $('.contact-message').delay(3000).fadeOut()
+    //     })
+    //     .fail(function(data) {
+    //         // Set the message text.
+    //         if (data.responseText !== '') {
+    //             $('.contact-message').fadeIn();
+    //             $('.contact-message').text(data.responseText);
+    //             $("form").find("input:not(input[type='submit'])").val('');
+    //             $("form").find("textarea").val('');
+    //             $('.contact-message').delay(3000).fadeOut()
+    //         } else {
+    //             $('.contact-message').fadeIn();
+    //             $('.contact-message').text('Oops! An error occured and your message could not be sent.');
+    //             $("form").find("input:not(input[type='submit'])").val('');
+    //             $("form").find("textarea").val('');
+    //             $('.contact-message').delay(3000).fadeOut()
+    //         }
+    //     });
+    // });
     // ---------------
     
     // Fancy cursor
